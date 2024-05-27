@@ -13,7 +13,8 @@ const jokes = [
 function show(){
     var index=document.getElementById('guessInput').value-1;
     if(index>=10){
-        windows.alert("choose between 1 to 10");
+        document.getElementById("joke").textContent="choose between 1 to 10";
+        return;
     }
     var jo=jokes[index];
     document.getElementById("joke").textContent=jo;
